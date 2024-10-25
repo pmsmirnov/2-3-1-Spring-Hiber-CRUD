@@ -11,8 +11,6 @@ import java.util.List;
 public class UserDaoImpl implements UserDao {
 
     @PersistenceContext(unitName = "getEntityManagerFactory")
-//    @Autowired
-//    @Qualifier("getEntityManager")
     private EntityManager entityManager;
 
     public void add(User user) {
